@@ -81,17 +81,15 @@ cp -r skill-memory-system ~/.claude/skills/
 cp -r skill-memory-system ~/.codex/skills/
 ```
 
-或者不安装，**直接把下面这段复制粘贴给任意 agent**，它会立刻按这套系统工作：
+或者把下面这段发给有 shell 权限的 agent（如 Claude Cowork），让它帮你执行安装：
 
 ```
-请按 skill-memory-system 规则为这个项目建立记忆体系：
-- 新建记忆目录（命名自定），已存在则追加不覆盖
-- 用户原话单独存放，原封不动，禁止改写
-- 业务事实分四区：用户一手事实 / 源文件事实 / AI推断（标置信度）/ 已修正事实
-- 决策日志格式：决定 + 原因 + 影响
-- 问题池按 🔴阻塞 / 🟡重要 / 🟢后续 分级
-- 审查区默认不建，用户明确要求双 agent 协作时才创建
+请执行以下命令，将 skill-memory-system 安装到你的 skills 目录：
+
+git clone https://github.com/qih749780-hash/skills-memory-system.git ~/.claude/skills/skill-memory-system
 ```
+
+agent 会自动运行命令，安装完成后这个 Skill 在下次会话就会生效。
 
 ---
 
