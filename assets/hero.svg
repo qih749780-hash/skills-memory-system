@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fafbfc"/>
+      <stop offset="100%" stop-color="#eef1f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="520" fill="url(#bg)" rx="12"/>
+
+  <!-- 左侧标题区 -->
+  <g transform="translate(60, 70)">
+    <text x="0" y="0" font-size="14" fill="#6a737d" letter-spacing="3">SKILL · MEMORY · SYSTEM</text>
+    <text x="0" y="56" font-size="48" font-weight="700" fill="#1a1f2c">先有记忆，</text>
+    <text x="0" y="108" font-size="48" font-weight="700" fill="#1a1f2c">才有可迭代的 Skill。</text>
+
+    <text x="0" y="170" font-size="18" fill="#3d4250" font-weight="500">把用户原话、业务事实、决策、问题</text>
+    <text x="0" y="198" font-size="18" fill="#3d4250" font-weight="500">分层保存——绝不混写。</text>
+
+    <text x="0" y="260" font-size="14" fill="#6a737d">一个为 Claude / Codex / Cursor 等 agent 平台</text>
+    <text x="0" y="280" font-size="14" fill="#6a737d">设计的元 Skill —— 它不替代你的业务 Skill，</text>
+    <text x="0" y="300" font-size="14" fill="#6a737d">而是先帮你建好那座可追溯的「记忆基础设施」。</text>
+
+    <!-- 标签 -->
+    <g transform="translate(0, 340)">
+      <rect x="0" y="0" width="118" height="28" rx="14" fill="#1a1f2c"/>
+      <text x="59" y="19" text-anchor="middle" font-size="13" font-weight="600" fill="#fafbfc">v0.2 · MIT</text>
+
+      <rect x="128" y="0" width="118" height="28" rx="14" fill="none" stroke="#1a1f2c" stroke-width="1.5"/>
+      <text x="187" y="19" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1f2c">中文 · 跨平台</text>
+
+      <rect x="256" y="0" width="148" height="28" rx="14" fill="none" stroke="#1a1f2c" stroke-width="1.5"/>
+      <text x="330" y="19" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1f2c">不混写 · 强追溯</text>
+    </g>
+  </g>
+
+  <!-- 右侧分层堆叠 -->
+  <g transform="translate(700, 60)" filter="url(#shadow)">
+    <!-- 标题 -->
+    <text x="220" y="-12" text-anchor="middle" font-size="13" fill="#6a737d" letter-spacing="2">七层 · 分离即真相</text>
+
+    <!-- 用户原话 -->
+    <g transform="translate(0, 10)">
+      <rect width="440" height="50" rx="8" fill="#fff3e0" stroke="#ff8a3d" stroke-width="1.5"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#a04500">用户原话</text>
+      <text x="430" y="32" text-anchor="end" font-size="13" fill="#a04500">一手信息源 · 原封不动</text>
+    </g>
+
+    <!-- 业务事实 -->
+    <g transform="translate(0, 70)">
+      <rect width="440" height="50" rx="8" fill="#e8f4ff" stroke="#3d8eff" stroke-width="1.5"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#1c4f8f">业务事实</text>
+      <text x="430" y="32" text-anchor="end" font-size="13" fill="#1c4f8f">分来源 · 分置信度</text>
+    </g>
+
+    <!-- 产品形态 -->
+    <g transform="translate(0, 130)">
+      <rect width="440" height="50" rx="8" fill="#e9f8ee" stroke="#2eb35c" stroke-width="1.5"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#175c34">产品形态</text>
+      <text x="430" y="32" text-anchor="end" font-size="13" fill="#175c34">活文档 · 持续演化</text>
+    </g>
+
+    <!-- 决策日志 -->
+    <g transform="translate(0, 190)">
+      <rect width="440" height="50" rx="8" fill="#f1ecff" stroke="#7c5cff" stroke-width="1.5"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#3f2a99">决策日志</text>
+      <text x="430" y="32" text-anchor="end" font-size="13" fill="#3f2a99">决定 · 原因 · 影响</text>
+    </g>
+
+    <!-- TODO / 问题池 -->
+    <g transform="translate(0, 250)">
+      <rect width="440" height="50" rx="8" fill="#fff0f3" stroke="#e94560" stroke-width="1.5"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#8c1a30">TODO / 问题池</text>
+      <text x="430" y="32" text-anchor="end" font-size="13" fill="#8c1a30">阻塞 · 重要 · 后续</text>
+    </g>
+
+    <!-- Skill 本体 -->
+    <g transform="translate(0, 310)">
+      <rect width="440" height="50" rx="8" fill="#f0f0f0" stroke="#6a737d" stroke-width="1.5"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#1a1f2c">Skill 本体</text>
+      <text x="430" y="32" text-anchor="end" font-size="13" fill="#3d4250">可执行规则 · 简洁</text>
+    </g>
+
+    <!-- UPDATE_LOG -->
+    <g transform="translate(0, 370)">
+      <rect width="440" height="50" rx="8" fill="#fafbfc" stroke="#bcc3cd" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="20" y="32" font-size="16" font-weight="700" fill="#3d4250">UPDATE_LOG</text>
+      <text x="430" y="32" text-anchor="end" font-size="13" fill="#3d4250">迭代轨迹 · 跟 Skill 走</text>
+    </g>
+  </g>
+
+  <!-- 底部签名 -->
+  <text x="60" y="492" font-size="12" fill="#9aa0a6">github.com/&lt;your-username&gt;/skill-memory-system  ·  在创建任何业务 Skill 之前，先建好记忆基础设施</text>
+</svg>

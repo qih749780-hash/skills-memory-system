@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 编辑器临时文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统临时
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 本地草稿（不提交到公共仓库的私人笔记）
+*.draft.md
+/scratch/
+/local-notes/
+
+# 不小心放进去的实际项目记忆目录（如果你用本 Skill 服务自己的项目）
+# 建议把你的真实项目放到外部目录，不要污染 examples/
+/my-*/
