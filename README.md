@@ -270,7 +270,7 @@ skill-memory-system/
 
 ## 📄 License
 
-[MIT](./LICENSE) © 2026 Ruo jing
+[MIT](./LICENSE) © 2026 big-yanmai
 
 ---
 
